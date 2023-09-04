@@ -1,2 +1,2 @@
 # About this project
-this project is a simple simulation of mac os monterey ui with html and css.
+This project is a simple simulation of Mac of Monterey CS with html and CSS.
