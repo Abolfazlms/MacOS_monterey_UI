@@ -77,8 +77,10 @@ body {
     align-items: center;
     justify-content: center;
 }
-.clock {
+.date_and_time {
     font-weight: 500;
     font-size: 0.8rem;
-    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    display: flex;
+    gap: 0.5rem;
 }
