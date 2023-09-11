@@ -5,74 +5,145 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" href="./favicon/icon.png">        
-        <link rel="stylesheet" href="./style.css">        
-        <title>macos monterey ui</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/png" href="./favicon/icon.png">
+        <title>Mac OS UI V 2.0</title>
+        
     </head>
     <body>
+        <div class="container">
             <header>
-                <nav class="container">
+                <div class="header">
                     <div class="left">
-                        <div class="icon"><i class="fa fa-apple"></i></div>
-                        <ul class="menu_bar">
-                            <li>Finder</li>
-                            <li>File</li>
-                            <li>Edit</li>
-                            <li>View</li>
-                            <li>Go</li>
-                            <li>Window</li>
-                            <li>Help</li>
-                        </ul>              
+                        <div class="header_icon"><i class="fa fa-apple"></i></div>
+                        <div>
+                            <ul>
+                            <li class="main_text">Finder</li>
+                            <li class="other_text">File</li>
+                            <li class="other_text">Edit</li>
+                            <li class="other_text">View</li>
+                            <li class="other_text">Go</li>
+                            <li class="other_text">Window</li>
+                            <li class="other_text">Help</li>
+                        </ul>
+                    </div>
+                        
                     </div>
                     <div class="right">
-                        <ul class="icons">
-                            <li class="charge_icon"><i class="fa fa-battery-4"></i></li>
-                            <li class="wifi_icon"><i class="fa fa-wifi"></i></li>
-                            <li class="search_icon"><i class="fa fa-search"></i></li>
-                            <li class="toggles">
-                                <img src="https://icon-library.com/images/toggle-icon-png/toggle-icon-png-5.jpg">
-                            </li>
-                        </ul>
-                        <ul class="date_and_time">
-                            <li class="date">Tue Nov 29</li>
-                            <li class="time">10:00 AM</li>
-                        </ul>
-                    </div>
-                </nav>
+                        <div class="icons">
+                            <i class="fa fa-battery"></i>
+                            <i class="fa fa-wifi"></i>
+                            <i class="fa fa-search"></i>
+                            <img class="control_center" src="./favicon/toggles.png"></img>
+                        </div>
+                        <div class="date_and_time">
+                            <div class="date">Tue Nov 29</div>
+                            <div class="clock" id="clock"> 10:00</span></div>
+                        </div>
+                        
+                    </div>                
+                </div>
             </header>
-            <footer> 
-                <div class="footer_container">
-                    <div class="footer_left">
-                        <img src="./menu_icons/finder.png" alt="finder">
-                        <div class="dot"></div>                       
-                        <img src="./menu_icons/launchpad.png" alt="launchpad">
-                        <img src="./menu_icons/safari.png" alt="safari">
-                        <img src="./menu_icons/messages.png" alt="messages">
-                        <img src="./menu_icons/mail.png" alt="mail">
-                        <img src="./menu_icons/maps.png" alt="maps">
-                        <img src="./menu_icons/photos.png" alt="photos">
-                        <img src="./menu_icons/facetime.png" alt="facetime">
-                        <img src="./menu_icons/calendar.png" alt="calendar">
-                        <img src="./menu_icons/contacts.png" alt="contacts">
-                        <img src="./menu_icons/reminders.png" alt="reminders">
-                        <img src="./menu_icons/notes.png" alt="notes">
-                        <img src="./menu_icons/tv.png" alt="tv">
-                        <img src="./menu_icons/music.png" alt="music">
-                        <img src="./menu_icons/podcasts.png" alt="podcasts">
-                        <img src="./menu_icons/news.png" alt="news">
-                        <img src="./menu_icons/keynote.png" alt="keynote">
-                        <img src="./menu_icons/numbers.png" alt="numbers">
-                        <img src="./menu_icons/pages.png" alt="pages">
-                        <img src="./menu_icons/app_store.png" alt="app_store">
-                        <img src="./menu_icons/setting.png" alt="setting">
-                        <div class="dot2"></div>    
+            <main>
+                <div class="dock">
+                    <div class="dock_container">
+                        <li class="li-1">
+                            <div class="name">Finder</div>
+                            <img class="icon" src="./menu_icons/finder.png" alt="finder_icon">
+                        </li>
+                        <li class="li-2">
+                            <div class="name">Siri</div>
+                            <img class="icon" src="./menu_icons/siri.png" alt="siri_icon">
+                        </li>
+                        <li class="li-3">
+                            <div class="name">Launchpad</div>
+                            <img class="icon" src="./menu_icons/launchpad.png" alt="luncpad_icon">
+                        </li>
+                        <li class="li-4">
+                            <div class="name">Safari</div>
+                            <img class="icon" src="./menu_icons/safari.png" alt="safari_icon">
+                        </li>
+                        <li class="li-5">
+                            <div class="name">Messages</div>
+                            <img class="icon" src="./menu_icons/messages.png" alt="messages_icon">
+                        </li>
+                        <li class="li-6">
+                            <div class="name">Mail</div>
+                            <img class="icon" src="./menu_icons/mail.png" alt="mail_icon">
+                        </li>
+                        <li class="li-7">
+                            <div class="name">Maps</div>
+                            <img class="icon" src="./menu_icons/maps.png" alt="maps_icon">
+                        </li>
+                        <li class="li-8">
+                            <div class="name">Photos</div>
+                            <img class="icon" src="./menu_icons/photos.png" alt="photos_icon">
+                        </li>
+                        <li class="li-9">
+                            <div class="name">FaceTime</div>
+                            <img class="icon" src="./menu_icons/facetime.png" alt="facetime_icon">
+                        </li>
+                        <li class="li-10">
+                            <div class="name">Calendar</div>
+                            <img class="icon" src="./menu_icons/calendar.png" alt="calendar_icon">
+                        </li>
+                        <li class="li-11">
+                            <div class="name">Contacts</div>
+                            <img class="icon" src="./menu_icons/contacts.png" alt="contacts_icon">
+                        </li>
+                        <li class="li-12">
+                            <div class="name">Reminders</div>
+                            <img class="icon" src="./menu_icons/reminders.png" alt="reminders_icon">
+                        </li>
+                        <li class="li-13">
+                            <div class="name">Notes</div>
+                            <img class="icon" src="./menu_icons/notes.png" alt="notes_icon">
+                        </li>
+                        <li class="li-14">
+                            <div class="name">TV</div>
+                            <img class="icon" src="./menu_icons/tv.png" alt="tv_icon">
+                        </li>
+                        <li class="li-15">
+                            <div class="name">Music</div>
+                            <img class="icon" src="./menu_icons/music.png" alt="music_icon">
+                        </li>
+                        <li class="li-16">
+                            <div class="name">Podcasts</div>
+                            <img class="icon" src="./menu_icons/podcasts.png" alt="podcasts_icon">
+                        </li>
+                        <li class="li-17">
+                            <div class="name">News</div>
+                            <img class="icon" src="./menu_icons/news.png" alt="news_icon">
+                        </li>
+                        <li class="li-18">
+                            <div class="name">KeyNote</div>
+                            <img class="icon" src="./menu_icons/keynote.png" alt="keynote_icon">
+                        </li>
+                        <li class="li-19">
+                            <div class="name">Numbers</div>
+                            <img class="icon" src="./menu_icons/numbers.png" alt="numbers_icon">
+                        </li>
+                        <li class="li-20">
+                            <div class="name">Pages</div>
+                            <img class="icon" src="./menu_icons/pages.png" alt="pages_icon">
+                        </li>
+                        <li class="li-21">
+                            <div class="name">App Store</div>
+                            <img class="icon" src="./menu_icons/app_store.png" alt="app_store_icon">
+                        </li>
+                        <li class="li-22">
+                            <div class="name">Setting</div>
+                            <img class="icon" src="./menu_icons/setting.png" alt="setting_icon">
+                        </li>
+                        <li class="li-23 li-bin">
+                            <div class="name">Bin</div>
+                            <img class="icon icon-bin" src="./menu_icons/recycle_bin.png" alt="recycle_bin_icon">
+                        </li>
+                        
                     </div>
-                    <div class="footer_right">
-                        <div class="vertical_line"></div>
-                        <img src="./menu_icons/folder.png" alt="">
-                        <img class="image" src="./menu_icons/rsz_recycle_bin-removebg-preview.png" alt="">
-                    </div>
-                </div>                           
-            </footer>        
+                </div>
+            </main>
+        </div>
+        <script src="./script.js"></script>
     </body>
 </html>
