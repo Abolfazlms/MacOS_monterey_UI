@@ -52,6 +52,7 @@ body {
 .left li {
     padding: 0 0.2rem;
     font-size: 0.8rem;
+    cursor: pointer;
 }
 .main_text {
     font-weight: bold;
@@ -65,7 +66,7 @@ body {
     align-items: center;
     gap: 0.7rem;
 }
-.icon {
+.icons {
     display: flex;
     justify-content: center;
     gap: 0.7rem;
@@ -83,4 +84,101 @@ body {
     margin-right: 0.7rem;
     display: flex;
     gap: 0.5rem;
+}
+.dock {
+    width: auto;
+    height: 60px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    border-radius: 0.9rem;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-50%);
+}
+.dock_container {
+    padding: 3px;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.9rem;
+    background-color: rgba(245, 245, 245, 0.3);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.dock li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    vertical-align: bottom;
+    transition: 0.2s;
+    transform-origin: 50% 100%;
+}
+.dock li:hover {
+    margin: 0 11px 0 11px;
+}
+.li-1 {
+    &::after {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        content: '';
+        bottom: 2px;
+    }
+}
+.li-bin {
+    margin-left: 14px;
+    padding-left: 10px;
+    border-left: 1.8px solid rgba(0, 0, 0, 0.4);
+}
+.name {
+    position: absolute;
+    top: -50px;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.9);
+    height: 10px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    visibility: hidden;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -11px;
+        width: 0;
+        height: 0;
+        backdrop-filter: blur(14px);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid rgba(0, 0, 0, 0.5);
+    }
+}
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.2s;
+}
+.icon-bin {
+    width: 93% !important;
+    height: 93% !important;
+    object-fit: cover;
+    transition: 0.2s;
+}
+.icon-bin:hover {
+    margin-left: 10px;
+}
+.dock_container li:hover {
+    .name {
+        visibility: visible !important;
+    }
 }
