@@ -23,6 +23,9 @@ body {
     backdrop-filter: blur(px);
     /* border: 0.5rem solid; */
     padding-top: 0.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .left {
     padding: 0.1rem 1rem;
@@ -51,4 +54,26 @@ body {
 }
 .other_text {
     font-weight: 500;
+}
+.right {
+    padding: 0.1rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+}
+.control_center {
+    height: 100%;
+    width: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock {
+    font-weight: 500;
+    font-size: 0.8rem;
 }
