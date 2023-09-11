@@ -54,3 +54,37 @@ function showDate() {
 
 showTime();
 showDate();
+
+let icons = document.querySelectorAll('.icon');
+let lenght = icons.length;
+
+icons.forEach((item, index) => {
+    item.addEventListener('mouseover', (e) => {
+        focus(e.target, index);
+    });
+    item.addEventListener('mouseleave', (e) => {
+        icons.forEach((item) => {
+            item.style.transform = 'scale(1) translateY(0px)';
+        });
+    });
+});
+
+let focus = (element, index) => {
+    let previous = index - 1;
+    let previous_1 = index - 2;
+
+    let next = index + 1;
+    let next_1 = index + 2;
+
+    if (previous == -1) {
+        element.style.transform = 'scale(1.5) translateY(-10px)';
+    } else if (next == icons.length) {
+        element.style.transform = 'scale(1.5) translateY(-10px)';
+    } else {
+        element.style.transform = 'scale(1.5) translateY(-10px)';
+        icons[previous].style.transform = 'scale(1.2) translateY(-6px)';
+        icons[previous_1].style.transform = 'scale(1.1)';
+        icons[next].style.transform = 'scale(1.2) translateY(-6px)';
+        icons[next_1].style.transform = 'scale(1.1)';
+    }
+};
