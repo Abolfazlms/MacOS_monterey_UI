@@ -19,10 +19,14 @@ body {
 }
 .header {
     width: 100%;
-    background-color: rgba(245, 245, 245, 0.7);
-    backdrop-filter: blur(px);
+    background-color: rgba(245, 245, 245, 0.3);
+    backdrop-filter: blur(50px);
     /* border: 0.5rem solid; */
     padding-top: 0.2rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,4 +80,5 @@ body {
 .clock {
     font-weight: 500;
     font-size: 0.8rem;
+    margin-left: 0.7rem;
 }
