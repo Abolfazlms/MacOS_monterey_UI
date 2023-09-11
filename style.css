@@ -1,11 +1,54 @@
 :root {
     box-sizing: border-box;
 }
-html {
-    box-sizing: inherit;
-}
 * {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+}
+
+html,
+body {
+    box-sizing: inherit;
+    font-family: 'Roboto';
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/background.jpg');
+}
+.header {
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.7);
+    backdrop-filter: blur(px);
+    /* border: 0.5rem solid; */
+    padding-top: 0.2rem 0;
+}
+.left {
+    padding: 0.1rem 1rem;
+    display: flex;
+    align-items: center;
+}
+.header_icon {
+    margin-right: 0.7rem;
+}
+.left ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+}
+.left li {
+    padding: 0 0.2rem;
+    font-size: 0.8rem;
+}
+.main_text {
+    font-weight: bold;
+}
+.other_text {
+    font-weight: 500;
 }
