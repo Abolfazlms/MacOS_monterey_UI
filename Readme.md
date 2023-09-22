@@ -18,7 +18,7 @@ This project is a simple simulation of Mac of Monterey CS with html and CSS.
 -   dynamic Real-time clock and calendar
 -   unique images for calendar
 
-#### version 2.0.1
+#### version 2.1.0
 
 -   improve the project speed and performance
 -   replace .png files with .webp image
