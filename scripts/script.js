@@ -52,7 +52,7 @@ function showDate() {
     document.getElementsByClassName('date')[0].textContent = todayDate;
     document.getElementById(
         'calendar'
-    ).src = `./menu_icons/calendar/${curMonth.toLowerCase()}/${curMonth.toLowerCase()}_${dayOfMonth}.png`;
+    ).src = `./menu_icons/calendar/${curMonth.toLowerCase()}/${curMonth.toLowerCase()}_${dayOfMonth}.webp`;
 }
 
 /*Date and Time Function Declaring */
